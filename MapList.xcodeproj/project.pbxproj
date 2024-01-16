@@ -12,6 +12,7 @@
 		479D6EC32B54181D00E563E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D6EC22B54181D00E563E3 /* Assets.xcassets */; };
 		479D6EC62B54181D00E563E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D6EC52B54181D00E563E3 /* Preview Assets.xcassets */; };
 		479D6ECD2B56C8DA00E563E3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ECC2B56C8DA00E563E3 /* Location.swift */; };
+		479D6ECF2B56D27A00E563E3 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ECE2B56D27A00E563E3 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		479D6EC22B54181D00E563E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479D6EC52B54181D00E563E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		479D6ECC2B56C8DA00E563E3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		479D6ECE2B56D27A00E563E3 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				479D6ECC2B56C8DA00E563E3 /* Location.swift */,
 				479D6EBE2B54181C00E563E3 /* MapListApp.swift */,
 				479D6EC02B54181C00E563E3 /* ContentView.swift */,
+				479D6ECE2B56D27A00E563E3 /* EditView.swift */,
 				479D6EC22B54181D00E563E3 /* Assets.xcassets */,
 				479D6EC42B54181D00E563E3 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				479D6EC12B54181C00E563E3 /* ContentView.swift in Sources */,
 				479D6ECD2B56C8DA00E563E3 /* Location.swift in Sources */,
+				479D6ECF2B56D27A00E563E3 /* EditView.swift in Sources */,
 				479D6EBF2B54181C00E563E3 /* MapListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

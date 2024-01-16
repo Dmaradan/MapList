@@ -9,9 +9,9 @@ import Foundation
 import MapKit
 
 struct Location: Codable, Equatable, Identifiable {
-    let id: UUID
-    let name: String
-    let description: String
+    var id: UUID
+    var name: String
+    var description: String
     let latitude: Double
     let longitude: Double
     
