@@ -14,6 +14,7 @@
 		479D6ECD2B56C8DA00E563E3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ECC2B56C8DA00E563E3 /* Location.swift */; };
 		479D6ECF2B56D27A00E563E3 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ECE2B56D27A00E563E3 /* EditView.swift */; };
 		479D6ED12B58188E00E563E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ED02B58188E00E563E3 /* Result.swift */; };
+		479D6ED32B59895F00E563E3 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6ED22B59895F00E563E3 /* ContentView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		479D6ECC2B56C8DA00E563E3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		479D6ECE2B56D27A00E563E3 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		479D6ED02B58188E00E563E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		479D6ED22B59895F00E563E3 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				479D6EBE2B54181C00E563E3 /* MapListApp.swift */,
 				479D6EC02B54181C00E563E3 /* ContentView.swift */,
 				479D6ECE2B56D27A00E563E3 /* EditView.swift */,
+				479D6ED22B59895F00E563E3 /* ContentView-ViewModel.swift */,
 				479D6ED02B58188E00E563E3 /* Result.swift */,
 				479D6EC22B54181D00E563E3 /* Assets.xcassets */,
 				479D6EC42B54181D00E563E3 /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D6EC12B54181C00E563E3 /* ContentView.swift in Sources */,
+				479D6ED32B59895F00E563E3 /* ContentView-ViewModel.swift in Sources */,
 				479D6ED12B58188E00E563E3 /* Result.swift in Sources */,
 				479D6ECD2B56C8DA00E563E3 /* Location.swift in Sources */,
 				479D6ECF2B56D27A00E563E3 /* EditView.swift in Sources */,
