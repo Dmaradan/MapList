@@ -7,6 +7,7 @@
 
 import CoreLocation
 import Foundation
+import LocalAuthentication
 import MapKit
 
 extension ContentView {
@@ -14,6 +15,7 @@ extension ContentView {
     class ViewModel {
         private(set) var locations: [Location]
         var selectedPlace: Location?
+        var isUnlocked = false
         
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
@@ -42,7 +44,25 @@ extension ContentView {
             save()
         }
         
-        func updateLocation(location: Location) {
+        func authenticate() {
+            let context = LAContext()
+            var error: NSError?
+            
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+                let reason = "Please authenticate yourself to unlock your places"
+                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authError in
+                    if success {
+                        self.isUnlocked = true
+                    } else {
+                        print("ERROR: \(authError)")
+                    }
+                }
+            } else {
+                print("No biometrics")
+            }
+        }
+        
+        func update(location: Location) {
             guard let selectedPlace else { return }
             
             if let index = locations.firstIndex(of: selectedPlace) {
@@ -51,6 +71,7 @@ extension ContentView {
             }
             
         }
+        
     }
 }
 
