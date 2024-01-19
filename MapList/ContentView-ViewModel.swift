@@ -14,8 +14,11 @@ extension ContentView {
     @Observable
     class ViewModel {
         private(set) var locations: [Location]
+        
         var selectedPlace: Location?
         var isUnlocked = false
+        var authenticationAlertIsShowing = false
+        var authenticationError = ""
         
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
@@ -48,17 +51,20 @@ extension ContentView {
             let context = LAContext()
             var error: NSError?
             
+            authenticationAlertIsShowing = false
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                 let reason = "Please authenticate yourself to unlock your places"
                 context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authError in
                     if success {
                         self.isUnlocked = true
                     } else {
-                        print("ERROR: \(authError)")
+                        self.authenticationError = "Invalid biometric credentials"
+                        self.authenticationAlertIsShowing = true
                     }
                 }
             } else {
-                print("No biometrics")
+                self.authenticationError = "Your device does not support biometric authentication"
+                self.authenticationAlertIsShowing = true
             }
         }
         
